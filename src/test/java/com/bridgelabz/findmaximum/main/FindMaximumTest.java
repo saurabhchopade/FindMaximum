@@ -13,10 +13,17 @@ public class FindMaximumTest {
     }
 
     @Test
-    public void passArrayOfInt_KeepFindingMaxatLast_ShouldReturnMaxNumber() {
+    public void passArrayOfInt_KeepFindingMax_ShouldReturnMaxNumber() {
         Integer[] array = {1, 5, 3};
         new FindMaximum();
         Integer value = (Integer) obj.giveMax(array);
         Assert.assertEquals(array[1],value);
+    }
+    @Test
+    public void passArrayOfInt_PutMaxNumberAtFirstPosition_ShouldReturnMaxNumber() {
+        Integer[] array = {10, 5, 3};
+        new FindMaximum();
+        Integer value = (Integer) obj.giveMax(array);
+        Assert.assertEquals(array[0],value);
     }
 }
