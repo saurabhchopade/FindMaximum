@@ -33,4 +33,11 @@ public class FindMaximumTest {
         Integer value = (Integer) obj.giveMax(array);
         Assert.assertEquals(array[1],value);
     }
+    @Test
+    public void passArrayOfInt_PutMaxNumberAtThirdPosition_ShouldReturnMaxNumber() {
+        Integer[] array = {10, 40, 100};
+        new FindMaximum();
+        Integer value = (Integer) obj.giveMax(array);
+        Assert.assertEquals(array[2],value);
+    }
 }
