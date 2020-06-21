@@ -56,4 +56,12 @@ public class FindMaximumTest {
         Float value = (Float) obj.giveMaxFloat(array);
         Assert.assertEquals(array[0],value);
     }
+
+    @Test
+    public void passArrayOfFloat_PutMaxNumberAtSecondPosition_ShouldReturnMaxNumber() {
+        Float[] array = {100F, 400F, 14F};
+        new FindMaximum();
+        Float value = (Float) obj.giveMaxFloat(array);
+        Assert.assertEquals(array[1],value);
+    }
 }
