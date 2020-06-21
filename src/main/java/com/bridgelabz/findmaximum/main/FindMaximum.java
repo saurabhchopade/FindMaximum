@@ -1,45 +1,15 @@
 package com.bridgelabz.findmaximum.main;
 import java.lang.*;
-public class FindMaximum  {
+public class FindMaximum <E>  {
     /**
-     * Check Max integer Number from Array
+     * ONE FUNCTION FOR ALL
      * @param array
-     * @param <Integer>
+     * @param <E>
      * @return
      */
-    public <Integer extends Comparable> Integer giveMaxInteger(Integer[] array) {
-        Integer max =array[0] ;
-        for (Integer arrayElement : array) {
-            if (arrayElement.compareTo(max) > 0)
-                max = arrayElement;
-        }
-        return max;
-    }
-
-    /**
-     * finding max value from float
-     * @param array
-     * @param <Float>
-     * @return
-     */
-    public <Float extends Comparable> Float giveMaxFloat(Float[] array) {
-        Float max =array[0];
-        for (Float arrayElement : array) {
-            if (arrayElement.compareTo(max) > 0)
-                max = arrayElement;
-        }
-        return max;
-    }
-
-    /**
-     * Finding max in string
-     * @param array
-     * @param <Float>
-     * @return
-     */
-    public <String extends Comparable> String giveMaxString(String[] array) {
-        String max =array[0];
-        for (String arrayElement : array) {
+    public < E extends Comparable> E giveMax(E[] array) {
+        E max =array[0];
+        for (E arrayElement : array) {
             if (arrayElement.compareTo(max) > 0)
                 max = arrayElement;
         }
