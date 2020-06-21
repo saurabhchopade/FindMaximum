@@ -30,4 +30,19 @@ public class FindMaximum  {
         }
         return max;
     }
+
+    /**
+     * Finding max in string
+     * @param array
+     * @param <Float>
+     * @return
+     */
+    public <String extends Comparable> String giveMaxString(String[] array) {
+        String max =array[0];
+        for (String arrayElement : array) {
+            if (arrayElement.compareTo(max) > 0)
+                max = arrayElement;
+        }
+        return max;
+    }
 }

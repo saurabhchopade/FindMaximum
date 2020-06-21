@@ -64,11 +64,28 @@ public class FindMaximumTest {
         Float value = (Float) obj.giveMaxFloat(array);
         Assert.assertEquals(array[1],value);
     }
+
+
     @Test
-    public void passArrayOfFloat_PutMaxNumberAtThirdPosition_ShouldReturnMaxNumber() {
-        Float[] array = {100F, 40F, 222F};
+    public void passArrayOfString_PutMaxStringlexicographicallyAtFirstPosition_ShouldReturnMaxString() {
+        String[] array = {"mathematics", "turbine", "camera"};
         new FindMaximum();
-        Float value = (Float) obj.giveMaxFloat(array);
+        String value = (String) obj.giveMaxFloat(array);
+        Assert.assertEquals(array[1],value);
+    }
+
+    @Test
+    public void passArrayOfString_PutMaxStringlexicographicallyAtSecondPosition_ShouldReturnMaxString() {
+        String[] array = {"a", "c", "b"};
+        new FindMaximum();
+        String value = (String) obj.giveMaxFloat(array);
+        Assert.assertEquals(array[1],value);
+    }
+    @Test
+    public void passArrayOfString_PutMaxStringlexicographicallyAtThirdPosition_ShouldReturnMaxString() {
+        String[] array = {"aim", "ball", "zampya"};
+        new FindMaximum();
+        String value = (String) obj.giveMaxFloat(array);
         Assert.assertEquals(array[2],value);
     }
 }
