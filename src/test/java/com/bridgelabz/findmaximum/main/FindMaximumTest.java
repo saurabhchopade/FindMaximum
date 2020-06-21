@@ -73,4 +73,12 @@ public class FindMaximumTest {
         String value = (String) obj.giveMaxFloat(array);
         Assert.assertEquals(array[1],value);
     }
+
+    @Test
+    public void passArrayOfString_PutMaxStringlexicographicallyAtSecondPosition_ShouldReturnMaxString() {
+        String[] array = {"a", "c", "b"};
+        new FindMaximum();
+        String value = (String) obj.giveMaxFloat(array);
+        Assert.assertEquals(array[1],value);
+    }
 }
