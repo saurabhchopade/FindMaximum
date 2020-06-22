@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.findmaximum.main.FindMaximumTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-06-21T21:55:15" hostname="saurabh3250" time="0.014">
+<testsuite name="com.bridgelabz.findmaximum.main.FindMaximumTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-06-22T03:52:48" hostname="saurabh3250" time="0.046">
   <properties/>
-  <testcase name="passArrayOfFloat_PutMaxNumberAtSecondPosition_ShouldReturnMaxNumber" classname="com.bridgelabz.findmaximum.main.FindMaximumTest" time="0.002"/>
+  <testcase name="passArrayOfFloat_PutMaxNumberAtSecondPosition_ShouldReturnMaxNumber" classname="com.bridgelabz.findmaximum.main.FindMaximumTest" time="0.016"/>
   <testcase name="passArrayOfInt_KeepFindingMax_ShouldReturnMaxNumber" classname="com.bridgelabz.findmaximum.main.FindMaximumTest" time="0.001"/>
   <testcase name="passArrayOfString_PutMaxStringlexicographicallyAtFirstPosition_ShouldReturnMaxString" classname="com.bridgelabz.findmaximum.main.FindMaximumTest" time="0.001"/>
-  <testcase name="passArrayOfFloat_PutMaxNumberAtFirstPosition_ShouldReturnMaxNumber" classname="com.bridgelabz.findmaximum.main.FindMaximumTest" time="0.001"/>
-  <testcase name="passArrayOfString_PutMaxStringlexicographicallyAtSecondPosition_ShouldReturnMaxString" classname="com.bridgelabz.findmaximum.main.FindMaximumTest" time="0.0"/>
-  <testcase name="passArrayOfString_PutMaxStringlexicographicallyAtThirdPosition_ShouldReturnMaxString" classname="com.bridgelabz.findmaximum.main.FindMaximumTest" time="0.001"/>
-  <testcase name="passArrayOfInt_PutMaxNumberAtSecondPosition_ShouldReturnMaxNumber" classname="com.bridgelabz.findmaximum.main.FindMaximumTest" time="0.0"/>
-  <testcase name="passArrayOfFloat_KeepFindingMax_ShouldReturnMaxNumber" classname="com.bridgelabz.findmaximum.main.FindMaximumTest" time="0.0"/>
-  <testcase name="passArrayOfInt_PutMaxNumberAtFirstPosition_ShouldReturnMaxNumber" classname="com.bridgelabz.findmaximum.main.FindMaximumTest" time="0.0"/>
-  <testcase name="passArrayOfInt_PutMaxNumberAtThirdPosition_ShouldReturnMaxNumber" classname="com.bridgelabz.findmaximum.main.FindMaximumTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="passArrayOfFloat_PutMaxNumberAtFirstPosition_ShouldReturnMaxNumber" classname="com.bridgelabz.findmaximum.main.FindMaximumTest" time="0.002"/>
+  <testcase name="passArrayOfString_PutMaxStringlexicographicallyAtSecondPosition_ShouldReturnMaxString" classname="com.bridgelabz.findmaximum.main.FindMaximumTest" time="0.002"/>
+  <testcase name="passArrayOfString_PutMaxStringlexicographicallyAtThirdPosition_ShouldReturnMaxString" classname="com.bridgelabz.findmaximum.main.FindMaximumTest" time="0.002"/>
+  <testcase name="passArrayOfInt_PutMaxNumberAtSecondPosition_ShouldReturnMaxNumber" classname="com.bridgelabz.findmaximum.main.FindMaximumTest" time="0.001"/>
+  <testcase name="passArrayOfFloat_KeepFindingMax_ShouldReturnMaxNumber" classname="com.bridgelabz.findmaximum.main.FindMaximumTest" time="0.001"/>
+  <testcase name="passArrayOfInt_PutMaxNumberAtFirstPosition_ShouldReturnMaxNumber" classname="com.bridgelabz.findmaximum.main.FindMaximumTest" time="0.002"/>
+  <testcase name="passArrayOfInt_PutMaxNumberAtThirdPosition_ShouldReturnMaxNumber" classname="com.bridgelabz.findmaximum.main.FindMaximumTest" time="0.002"/>
+  <system-out><![CDATA[MaxValue=400.0
+MaxValue=5
+MaxValue=turbine
+MaxValue=100.0
+MaxValue=c
+
+MaxValue=zampya
+MaxValue=40
+MaxValue=113.0
+MaxValue=10
+MaxValue=100
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
