@@ -1,32 +1,32 @@
 package com.bridgelabz.findmaximum.main;
 
-public class FindMaximum<E> {
-
+public class FindMaximum<E extends Comparable> {
     /**
-     * For Standard Output
+     * finding max using comparable and Optional it give max so no need to use sort
      *
-     * @param max
-     * @param <E>
-     */
-    public <E> void printMax(E max) {
-        System.out.println("MaxValue=" + max);
-    }
-
-    /**
-     * For Finding Max
-     *
-     * @param array
+     * @param num
      * @param <E>
      * @return
      */
-    public <E extends Comparable> E giveMax(E[] array) {
-        E max = array[0];
-        for (E arrayElement : array) {
-
-            if (arrayElement.compareTo(max) > 0)
-                max = arrayElement;
+    public <E extends Comparable> E giveMax(E... num) {
+        E max = (E) num[0];
+        for (int element = 0; element < num.length; element++) {
+            if (num[element].compareTo(max) > 0) {
+                max = num[element];
+            }
         }
-        printMax(max);
+        return printMax(max);
+    }
+
+    /**
+     * To Display in stdout
+     *
+     * @param max
+     * @param <E>
+     * @return
+     */
+    public <E> E printMax(E max) {
+        System.out.println("MaxValue=" + max);
         return max;
     }
 }
