@@ -11,70 +11,64 @@ public class FindMaximumTest {
     public void init() {
         obj = new FindMaximum();
     }
-//===================================INTEGER===================================================
+
+    //    //===================================INTEGER===================================================
     @Test
     public void passArrayOfInt_KeepFindingMax_ShouldReturnMaxNumber() {
-        Integer[] array = {1, 5, 3};
-        Integer value = (Integer) obj.giveMax(array);
-        Assert.assertEquals(array[1],value);
+        Assert.assertEquals(5, obj.giveMax(1, 5, 3));
     }
+
     @Test
     public void passArrayOfInt_PutMaxNumberAtFirstPosition_ShouldReturnMaxNumber() {
-        Integer[] array = {10, 5, 3};
-        Integer value = (Integer) obj.giveMax(array);
-        Assert.assertEquals(array[0],value);
+        Assert.assertEquals(10, obj.giveMax(10, 5, 3));
     }
+
     @Test
     public void passArrayOfInt_PutMaxNumberAtSecondPosition_ShouldReturnMaxNumber() {
-        Integer[] array = {10, 40, 3};
-        Integer value = (Integer) obj.giveMax(array);
-        Assert.assertEquals(array[1],value);
+        Assert.assertEquals(40, obj.giveMax(10, 40, 3));
     }
+
     @Test
     public void passArrayOfInt_PutMaxNumberAtThirdPosition_ShouldReturnMaxNumber() {
-        Integer[] array = {10, 40, 100};
-        Integer value = (Integer) obj.giveMax(array);
-        Assert.assertEquals(array[2],value);
+        Assert.assertEquals(100, obj.giveMax(10, 40, 100));
     }
-//===============================FLOAT============================================
+
+    ////===============================FLOAT============================================
     @Test
     public void passArrayOfFloat_KeepFindingMax_ShouldReturnMaxNumber() {
-        Float[] array = {100F, 40F, 113F};
-        Float value = (Float) obj.giveMax(array);
-        Assert.assertEquals(array[2],value);
+        Assert.assertEquals(113F, obj.giveMax(100F, 40F, 113F));
     }
+
     @Test
     public void passArrayOfFloat_PutMaxNumberAtFirstPosition_ShouldReturnMaxNumber() {
-        Float[] array = {100F, 40F, 14F};
-        Float value = (Float) obj.giveMax(array);
-        Assert.assertEquals(array[0],value);
+        Assert.assertEquals(100F, obj.giveMax(100F, 40F, 14F));
     }
+
     @Test
     public void passArrayOfFloat_PutMaxNumberAtSecondPosition_ShouldReturnMaxNumber() {
-        Float[] array = {100F, 400F, 14F};
-        Float value = (Float) obj.giveMax(array);
-        Assert.assertEquals(array[1],value);
+        Assert.assertEquals(400F, obj.giveMax(100F, 400F, 14F));
+
     }
 
-//=======================================STRING=====================================================
+    ////=======================================STRING=====================================================
     @Test
     public void passArrayOfString_PutMaxStringlexicographicallyAtFirstPosition_ShouldReturnMaxString() {
-        String[] array = {"mathematics", "turbine", "camera"};
-        String value = (String) obj.giveMax(array);
-        Assert.assertEquals(array[1],value);
-    }
-    @Test
-    public void passArrayOfString_PutMaxStringlexicographicallyAtSecondPosition_ShouldReturnMaxString() {
-        String[] array = {"a", "c", "b"};
-        String value = (String) obj.giveMax(array);
-        Assert.assertEquals(array[1], value);
-        System.out.println();
-    }
-    @Test
-    public void passArrayOfString_PutMaxStringlexicographicallyAtThirdPosition_ShouldReturnMaxString() {
-        String[] array = {"aim", "ball", "zampya"};
-        String value = (String) obj.giveMax(array);
-        Assert.assertEquals(array[2],value);
+        Assert.assertEquals("turbine", obj.giveMax("mathematics", "turbine", "camera"));
     }
 
+    @Test
+    public void passArrayOfString_PutMaxStringlexicographicallyAtSecondPosition_ShouldReturnMaxString() {
+        Assert.assertEquals("c", obj.giveMax("a", "c", "b"));
+    }
+
+    @Test
+    public void passArrayOfString_PutMaxStringlexicographicallyAtThirdPosition_ShouldReturnMaxString() {
+        Assert.assertEquals("zampya", obj.giveMax("aim", "ball", "zampya"));
+    }
+
+    //=============================More Than Tree Element================================
+    @Test
+    public void passArrayOfInt_MoreNumber_ShouldReturnMaxNumber() {
+        Assert.assertEquals(3, obj.giveMax(1, 2, 3, 0, 1, 1));
+    }
 }
